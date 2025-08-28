@@ -1,10 +1,10 @@
-#include stdio.h;
+#include <stdio.h>
 
 int main(){
   int number1, number2, operation;
 
   printf("Informe o primeiro número:\n");
-  scanf("%d", $number1);
+  scanf("%d", &number1);
 
   printf("\nEstas são as operações possíveis:\n");
 
@@ -14,9 +14,9 @@ int main(){
   puts("\t 4. Divisão");
 
   printf(">>\n");
-  scanf("\d", operation);
+  scanf("%d", &operation);
 
-  printf("Informe o segundo número: \n");
+  printf("Informe o segundo número:\n");
   scanf("%d", &number2);
 
 
