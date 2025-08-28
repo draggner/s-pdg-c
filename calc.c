@@ -19,6 +19,23 @@ int main(){
   printf("Informe o segundo número:\n");
   scanf("%d", &number2);
 
+// Verificações e Resultados das Operações
+
+  if (operation == 1) {
+    printf("%d + %d = %d\n", number1, number2,
+      (number1 + number2));
+  } else if (operation == 2) {
+    printf("%d - %d = %d\n", number1, number2,
+      (number1 - number2));
+  } else if (operation == 3) {
+    printf("%d * %d = %d\n", number1, number2,
+      (number1 * number2));
+  } else if (operation == 4) {
+    printf("%d / %d = %d\n", number1, number2,
+      (number1 / number2));
+  } else {
+    puts("OPERAÇÃO INVÁLIDA, TENTE NOVAMENTE!");
+  }
 
   return 0;
 }
