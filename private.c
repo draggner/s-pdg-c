@@ -7,7 +7,7 @@ int main(){
   char genero[10];
 
   printf("Informe Nome Completo:\n");
-  scanf("%s", nome);
+  scanf("%[^\n]s", nome);
 
   printf("Informe Idade:\n");
   scanf("%d", &idade);
