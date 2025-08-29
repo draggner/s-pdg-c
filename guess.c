@@ -7,7 +7,7 @@ int main() {
 
   srand(time(NULL));
 
-  int number = rand();
+  int number = rand() % 11;
   int entry;
 
   printf("Adivinhe o Número\n");
