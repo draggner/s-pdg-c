@@ -21,7 +21,13 @@ int main() {
     scanf("%d", &operation);
 
     if (operation == 5) {
+      puts("Encerrado");
       break;
+    } else if (operation < 1 || operation > 4) {
+      puts("OPERAÇÃO INVÁLIDA!");
+      puts("Pressione ENTER para continuar...");
+      getchar();
+      continue;
     }
 
     printf("Informe o primeiro número: \n");
@@ -38,10 +44,8 @@ int main() {
      printf("%d * %d = %d\n", number1, number2, (number1 * number2));
     } else if (operation == 4) {
      printf("%d / %d = %d\n", number1, number2, (number1 / number2));
-    }  else {
-      puts("OPERAÇÃO INVÁLIDA, TENTE NOVAMENTE!");
     }
-  } while (operation != 5);
+  } while (1);
 
   return 0;
 }
