@@ -9,9 +9,6 @@ int main() {
   puts("by Draggner");
 
   do {
-    printf("Informe o primeiro número:\n");
-    scanf("%d", &number1);
-
     puts("\n Estas são as operações possíveis:\n");
     puts("\t 1. Somar");
     puts("\t 2. Subtração");
@@ -22,6 +19,13 @@ int main() {
 
     puts(">>");
     scanf("%d", &operation);
+
+    if (operation == 5) {
+      break;
+    }
+
+    printf("Informe o primeiro número: \n");
+    scanf("%d", &number1);
 
     printf("Informe o segundo número:\n");
     scanf("%d", &number2);
@@ -34,9 +38,9 @@ int main() {
      printf("%d * %d = %d\n", number1, number2, (number1 * number2));
     } else if (operation == 4) {
      printf("%d / %d = %d\n", number1, number2, (number1 / number2));
-    } else if (operation == 5) {
-     ;
-    } else puts("OPERAÇÃO INVÁLIDA, TENTE NOVAMENTE!");
+    }  else {
+      puts("OPERAÇÃO INVÁLIDA, TENTE NOVAMENTE!");
+    }
   } while (operation != 5);
 
   return 0;
